@@ -28,7 +28,7 @@ Read about toDateString() for info on formatting a readable date.
 
 function transformData(data){
     const person = [];
-    userData.map(usr => person.push({fullName: usr.name.first + " " + usr.name.last, birthday: new Date(usr.dob.date).toDateString()}));
+    data.map(usr => person.push({fullName: usr.name.first + " " + usr.name.last, birthday: new Date(usr.dob.date).toDateString()}));
   
     return person; 
 
